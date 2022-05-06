@@ -22,14 +22,14 @@ class RegisterController extends Controller
     |
     */
 
-    // use RegistersUsers; 我自己关掉的这个不知道有没有影响(有影响，直接不能打开注册页面)
     use RegistersUsers;
+
     /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME ;
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -53,10 +53,6 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'captcha' => ['required', 'captcha'],
-        ],[
-            'captcha.required' => '验证码不能为空',
-            'captcha.captcha' => '请输入正确的验证码',
         ]);
     }
 
