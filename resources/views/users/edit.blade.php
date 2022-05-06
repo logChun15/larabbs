@@ -16,6 +16,7 @@
         <form action="{{ route('users.update', $user->id) }}" method="POST"
           accept-charset="UTF-8"
           enctype="multipart/form-data">
+          {{-- 上传图片或文件需要此声明 --}}
           <input type="hidden" name="_method" value="PUT">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -34,14 +35,14 @@
             <textarea name="introduction" id="introduction-field" class="form-control" rows="3">{{ old('introduction', $user->introduction) }}</textarea>
           </div>
 
-          {{-- <div class="mb-4">
+          <div class="mb-4">
             <label for="" class="avatar-label form-label">用户头像</label>
             <input type="file" name="avatar" class="form-control">
             @if($user->avatar)
               <br>
               <img class="thumbnail img-responsive" src="{{ $user->avatar }}" width="200" />
             @endif
-          </div> --}}
+          </div>
 
           <div class="well well-sm">
             <button type="submit" class="btn btn-primary">保存</button>
