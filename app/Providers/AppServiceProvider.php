@@ -11,10 +11,14 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        //
-    }
+    // public function register()
+    // {
+    //      if (app()->environment() == 'local' || app()->environment() == 'testing') {
+
+    //         $this->app->register(\Summerblue\Generator\GeneratorsServiceProvider::class);
+
+    //     }
+    // }
 
     /**
      * Bootstrap any application services.
@@ -22,7 +26,8 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
-        //
+	{
+		\App\Models\User::observe(\App\Observers\UserObserver::class);
+		\App\Models\Topic::observe(\App\Observers\TopicObserver::class);
     }
 }
