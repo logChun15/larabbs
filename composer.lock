@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8771ec0bf76ed41e1f48833257959e3b",
+    "content-hash": "ed59efefeefaa6bab7197fc6adc88768",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8151,6 +8151,70 @@
                 }
             ],
             "time": "2021-07-28T10:34:58+00:00"
+        },
+        {
+            "name": "yangliuan/generator",
+            "version": "v8.37.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yangliuan/generator.git",
+                "reference": "3b78584ef7bd6116375c19ae6768c7ad18b0e2aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yangliuan/generator/zipball/3b78584ef7bd6116375c19ae6768c7ad18b0e2aa",
+                "reference": "3b78584ef7bd6116375c19ae6768c7ad18b0e2aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "8.*",
+                "phpunit/phpunit": "^9.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Yangliuan\\Generator\\GeneratorsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yangliuan\\Generator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fernando Brito",
+                    "email": "fernandobritofl@gmail.com"
+                },
+                {
+                    "name": "Summer",
+                    "email": "summer@learnku.com"
+                },
+                {
+                    "name": "yangliuan",
+                    "email": "yangliuancn@foxmail.com"
+                }
+            ],
+            "description": "Extend Laravel's generators scaffold.",
+            "keywords": [
+                "generators",
+                "laravel",
+                "laravel8",
+                "scaffold"
+            ],
+            "support": {
+                "source": "https://github.com/yangliuan/generator/tree/v8.37.9"
+            },
+            "time": "2021-10-21T15:20:45+00:00"
         }
     ],
     "aliases": [],
