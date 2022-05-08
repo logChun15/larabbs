@@ -13,6 +13,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- route_class() 是我们自定义的辅助方法，我们还需要在 helpers.php 文件中添加此方法： -->
     <title>@yield('title', 'LaraBBS') - Laravel 进阶教程</title>
+    <meta name="description" content="@yield('description', 'LaraBBS 爱好者社区')" />
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     @yield('styles')
