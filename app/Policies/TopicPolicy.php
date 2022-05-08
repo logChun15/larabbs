@@ -16,6 +16,6 @@ class TopicPolicy extends Policy
 
     public function destroy(User $user, Topic $topic)
     {
-        return true;
+        return $user->isAuthorOf($topic); //和上面代码一样，只不过在user.php中注册过该函数，可以直接调用减少重复
     }
 }
