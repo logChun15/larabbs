@@ -25,12 +25,20 @@
         <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">登录</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">注册</a></li>
       @else
+
+      <li class="nav-item">
+        <a class="nav-link mt-1 mr-3 font-weight-bold" href="{{ route('topics.create') }}">
+        <i class="fa fa-plus"></i>
+        </a>
+      </li>
+
         <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" width="30px" height="30px">
       {{ Auth::user()->name }}
       </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('root') }}">首页</a>
           <a class="dropdown-item" href="{{ route('users.show',Auth::id()) }}">个人中心</a>
           <a class="dropdown-item" href="{{ route('users.edit',Auth::id()) }}">编辑资料</a>
         <div class="dropdown-divider"></div>

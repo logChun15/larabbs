@@ -13,10 +13,10 @@
         <div class="card-block bg-light">
           <div class="row">
             <div class="col-md-6">
-              <a class="btn btn-link" href="{{ route('topics.index') }}"><- Back</a>
+              <a class="btn btn-link" href="{{ route('topics.index') }}">< Back</a>
             </div>
             <div class="col-md-6">
-              <a class="btn btn-sm btn-warning float-right mt-1" href="{{ route('topics.edit', $topic->id) }}">
+              <a class="btn btn-sm btn-warning float-end mt-1" href="{{ route('topics.edit', $topic->id) }}">
                 Edit
               </a>
             </div>

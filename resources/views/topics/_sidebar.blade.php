@@ -43,6 +43,8 @@
 
 <div class="card ">
   <div class="card-body">
-  右边导航栏
+  <a href="{{ route('topics.create') }}" class="btn btn-success btn-block w-100" aria-label="Left Align">
+    <i class="fa-solid fa-pencil me-2"></i> 新建帖子
+  </a>
   </div>
 </div>
