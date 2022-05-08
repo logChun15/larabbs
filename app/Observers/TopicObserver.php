@@ -18,4 +18,11 @@ class TopicObserver
     {
         //
     }
+
+    public function saving(Topic $topic)
+    {
+    $topic->body = clean($topic->body, 'default'); //防止xss注入
+    $topic->excerpt = make_excerpt($topic->body);
+    }
+
 }

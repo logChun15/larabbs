@@ -57,7 +57,7 @@
   </div>
 @endsection
 
-@section('styles')
+{{-- @section('styles')
   <link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}">
 @stop
 
@@ -67,12 +67,6 @@
   <script type="text/javascript" src="{{ asset('js/hotkeys.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/uploader.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/simditor.js') }}"></script>
-{{-- <script>
-    var editor = new Simditor({
-      textarea: $('#editor')
-      //optional options
-    });
- </script> --}}
 
  <script>
   $(document).ready(function() {
@@ -92,4 +86,4 @@
   });
 </script>
 
-@stop
+@stop --}}
