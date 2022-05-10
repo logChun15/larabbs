@@ -33,4 +33,12 @@ class AppServiceProvider extends ServiceProvider
         \App\Models\Reply::observe(\App\Observers\ReplyObserver::class);
         Paginator::useBootstrap();
     }
+
+    public function register()
+    {
+        if (app()->isLocal()) {
+        $this->app->register(\VIACreative\SudoSu\ServiceProvider::class);
+        }
+    }
+
 }
