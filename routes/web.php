@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', 'PagesController@root')->name('root');
+Route::get('/', 'Api\TopicsController@index')->name('root');
+
 // 用户身份验证相关的路由 一下一大串等同于Auth::routes();
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
