@@ -1,4 +1,4 @@
-{{-- <div class="card ">
+<div class="card ">
   <div class="card-body">
     <a href="{{ route('topics.create') }}" class="btn btn-success w-100" aria-label="Left Align">
       <i class="fas fa-pencil-alt mr-2"></i> 新建帖子
@@ -25,7 +25,7 @@
   </div>
 @endif
 
-@if (count($links))
+{{-- @if (count($links))
   <div class="card mt-4">
     <div class="card-body pt-2">
       <div class="text-center mt-1 mb-0 text-muted">资源推荐</div>
@@ -40,11 +40,3 @@
     </div>
   </div>
 @endif --}}
-
-<div class="card ">
-  <div class="card-body">
-  <a href="{{ route('topics.create') }}" class="btn btn-success btn-block w-100" aria-label="Left Align">
-    <i class="fa-solid fa-pencil me-2"></i> 新建帖子
-  </a>
-  </div>
-</div>

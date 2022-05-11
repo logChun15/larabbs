@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
+    use Traits\ActiveUserHelper;
     use HasRoles;
     use HasFactory,MustVerifyEmailTrait;
     use Notifiable {
