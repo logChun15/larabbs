@@ -25,7 +25,7 @@
   </div>
 @endif
 
-{{-- @if (count($links))
+@if (count($links))
   <div class="card mt-4">
     <div class="card-body pt-2">
       <div class="text-center mt-1 mb-0 text-muted">资源推荐</div>
@@ -39,4 +39,4 @@
       @endforeach
     </div>
   </div>
-@endif --}}
+@endif
